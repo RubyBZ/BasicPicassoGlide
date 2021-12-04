@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.widget.ImageView;
 
 import com.bumptech.glide.Glide;
+import com.flaviofaria.kenburnsview.KenBurnsView;
 import com.squareup.picasso.Picasso;
 
 public class MainActivity extends AppCompatActivity {
@@ -21,6 +22,7 @@ public class MainActivity extends AppCompatActivity {
 
         ImageView picassoImageView = findViewById(R.id.picassoImageView);
         ImageView glideImageView = findViewById(R.id.glideImageView);
+        KenBurnsView kbImageView = findViewById(R.id.kenburnsImageView);
 
         //Both picasso & glide failed to upload images from unsplash website
         Picasso.get()
@@ -32,6 +34,8 @@ public class MainActivity extends AppCompatActivity {
                 .load("http://goo.gl/gEgYUd")
                 //.load("https://images.unsplash.com/photo-1567930009485-07d60c813306?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80")
                 .into(glideImageView);
+
+        Picasso.get().load("http://i.imgur.com/DvpvklR.png").into(kbImageView);
 
     }
 }
