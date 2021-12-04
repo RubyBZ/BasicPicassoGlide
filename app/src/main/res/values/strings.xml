@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">BasicPicassoGlide</string>
+    <string name="glide_image">glide image</string>
+    <string name="picasso_image">picasso image</string>
+</resources>
